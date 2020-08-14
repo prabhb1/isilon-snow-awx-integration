@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="AWX Endpoint" max_length="40" name="x_440434_isilon_se_awx_endpoint" type="collection">
+        <element label="Authorisation Type" max_length="40" name="authorisation_type" type="string"/>
+        <element label="AWX Endpoint Name" mandatory="true" max_length="40" name="awx_endpoint_name" type="string"/>
+        <element label="AWX Host " max_length="40" name="awx_host" type="string"/>
+        <element label="MID Server List" max_length="32" name="mid_server_list" reference="ecc_agent" type="reference"/>
+        <element label="Password" max_length="255" name="password" type="password2"/>
+        <element label="Port" max_length="10" name="port" type="string"/>
+        <element label="Username" max_length="40" name="username" type="string"/>
+        <index name="index">
+            <element name="mid_server_list"/>
+        </index>
+    </element>
+</database>

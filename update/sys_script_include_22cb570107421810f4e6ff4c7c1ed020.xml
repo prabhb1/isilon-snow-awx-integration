@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_440434_isilon_se.Isilon_AWX_RestApi</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>This script includes the rest call configuration.</description>
+        <name>Isilon_AWX_RestApi</name>
+        <script><![CDATA[var Isilon_AWX_RestApi = Class.create();
+Isilon_AWX_RestApi.prototype = {
+	_restErr: "",
+	_endpoint_Sysid: null,
+	_controlRecord: null,
+    isAuthorized: false,
+	setRestErr: function(error) {
+		if (!gs.nil(this._restErr))
+			this._restErr += "\n";
+		this._restErr += error;
+	},
+	
+    RESTCall: function(url, method, jsonData) {
+        var restErr = "";
+        try {
+            restErr = "RESTCall URL: " + url + ", method: " + method + ". ";
+            gs.info(restErr);
+            gs.info("RESTCall Json: " + jsonData);
+			
+			var r = this._setRestRequest(url, method);
+            if (method == "post" && jsonData) {
+				var jsonDat = this.toJSON(jsonData);
+                r.setRequestBody(jsonDat);
+            }
+            var response = r.execute();
+            response.waitForResponse(300);
+            if (response.haveError()) {
+                gs.info("RESTCall call has error: " + response.getErrorMessage());
+            }
+
+            var httpStatus = response.getStatusCode();
+            gs.info("RESTCall HTTP Status Code: " + httpStatus + "response: " + response.getBody());
+            if ((httpStatus == 200 || httpStatus == 201 || httpStatus == 202 || httpStatus == 204)) { // || httpStatus == 404
+				gs.debug(response.haveError);
+                if (response.haveError()) {
+                    var restErr2 = "Success (" + httpStatus + ") with error message: " + response.getErrorMessage() + " ";
+                    gs.debug(restErr2);
+                    restErr += restErr2;
+                }
+                return this._returnRESTCallResult(response, method, httpStatus, restErr);
+            } else {
+                var restErr4 = "RESTCall failed: " + response.getErrorMessage() + ". Http Status: " + httpStatus + " ";
+                gs.debug(restErr4);
+                restErr += restErr4;
+                this.setRestErr(restErr);
+                return {
+                    statusCode: 2,
+                    error: restErr4,
+                    httpStatus: httpStatus
+                };
+            }
+        } catch (ex) {
+            var err = "RESTCall throw error: " + ex;
+            gs.info(err);
+            restErr += err;
+            //this.setRestErr(restErr);
+            return {
+                statusCode: 3,
+                error: restErr,
+                httpStatus: 500
+            };
+
+        } finally {
+            gs.info("RESTCall Completed");
+        }
+    },
+	
+	_returnRESTCallResult: function(response, method, httpStatus, restErr) {
+		var httpStatusUpdate = "";
+		var responseBody = response.getBody();
+		if(method == "post") {
+			return {statusCode: 0, responseBody: responseBody, httpStatus: httpStatus};
+		} 
+		if (method == "get") {
+			gs.info("In get method");
+			return {statusCode: 0, httpStatus: httpStatus, responseBody: responseBody};
+		}
+		if (responseBody != null) {
+			return {statusCode: 0, responseBody: responseBody, httpStatus: httpStatus};
+		} else {
+			var restErr3 = "RESTCall call return " + httpStatus + " but response body is null. ";
+			gs.info(restErr3);
+			restErr += restErr3;
+			this.setRestErr(restErr);
+			return {statusCode: 1, error: restErr, httpStatus: httpStatus};
+		}
+// 		if(responseBody != null)
+// 			return {statusCode: 0, responseBody: responseBody, httpStatus: httpStatus}; 
+// 		else{
+// 			var restErr3 = "RESTCall call return " + httpStatus + " but response body is null. ";
+// 			gs.info(restErr3);
+// 			restErr += restErr3;
+// 			this.setRestErr(restErr);
+// 			return {statusCode: 1, error: restErr, httpStatus: httpStatus};
+// 		}		
+	},
+
+    initialize: function(endpoint_Sysid, doInit) {
+		this.endpoint_Sysid = endpoint_Sysid;
+        this._controlRecord = this._getEndpointSetting(endpoint_Sysid);
+		if(doInit == undefined || doInit === true){
+			this._init();	
+		}
+    },
+
+    _getEndpointSetting: function(endpoint_Sysid) {
+        var rec = new GlideRecord('x_440434_isilon_se_awx_endpoint');
+        rec.get(endpoint_Sysid);
+        return rec;
+    },
+
+    _init: function() {
+        var auth_type = this._controlRecord.authorisation_type.toString();
+        switch (auth_type) {
+            case "Token":
+                this.getToken();
+                break;
+        }
+    },
+
+    getToken: function() {
+        this.setAuthorized(false);
+    },
+
+    setAuthorized: function(auth) {
+        this._isAuthorized = auth;
+    },
+
+    _setRestRequest: function(extraURL, method) {
+        var r = new sn_ws.RESTMessageV2();
+        r.setRequestHeader("Content-Type", "application/json");
+        r.setRequestHeader("Accept", "application/json");
+        gs.info("Authorized: " + this._isAuthorized);
+        if (this._isAuthorized) {
+            r.setRequestHeader("Authorization", this.getToken());
+        }
+        if (this._controlRecord.authorisation_type.toString() == 'Token') {
+            var password = this._controlRecord.password.getDecryptedValue().toString();
+            var username = this._controlRecord.username.toString();
+            gs.info("Basic Auth, user name: " + username);
+            r.setBasicAuth(username, password);
+        }
+
+        r.setHttpMethod(method);
+		
+		if(!(this._controlRecord.mid_server_list.nil())){
+			var mid = new GlideRecord('ecc_agent');
+			var sysids = this._controlRecord.mid_server_list.split(',');
+			mid.get(sysids[0]);
+			gs.info("mid server = " + mid.name.toString());
+			r.setMIDServer(mid.name.toString());
+		}
+		
+		//Add a flag to make it specific for return calls
+		var url = "";
+		var baseUrl = this._controlRecord.awx_host.toString();
+		url = baseUrl + extraURL;
+        gs.info("CS: URL: " + url);
+        r.setEndpoint(url);
+        return r;
+    },
+	
+	toJSON: function(obj){
+		var json = new global.JSON();
+		var val =  json.encode(obj);
+		// gs.info(val);
+		return val;
+	},
+
+    type: 'Isilon_AWX_RestApi'
+};
+
+Isilon_AWX_RestApi.get = function(endpoint_Sysid) {
+	return new Isilon_AWX_RestApi(endpoint_Sysid);
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-15 11:50:39</sys_created_on>
+        <sys_id>22cb570107421810f4e6ff4c7c1ed020</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Isilon_AWX_RestApi</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>sys_script_include_22cb570107421810f4e6ff4c7c1ed020</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-10 08:15:35</sys_updated_on>
+    </sys_script_include>
+</record_update>

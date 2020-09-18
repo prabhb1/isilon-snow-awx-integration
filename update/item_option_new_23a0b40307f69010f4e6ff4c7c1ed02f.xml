@@ -36,11 +36,11 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>group_access_level</name>
-        <order>700</order>
+        <name>local_snaphshot_required</name>
+        <order>950</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
-        <question_text>Enter Group Access Level</question_text>
+        <question_text>Local Snaphshot Required</question_text>
         <read_roles/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
@@ -57,16 +57,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-06 07:58:24</sys_created_on>
-        <sys_id>58d9770c07e29010f4e6ff4c7c1ed00f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Enter Group Access Level</sys_name>
+        <sys_created_on>2020-08-27 11:17:29</sys_created_on>
+        <sys_id>23a0b40307f69010f4e6ff4c7c1ed02f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Local Snaphshot Required</sys_name>
         <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
-        <sys_update_name>item_option_new_58d9770c07e29010f4e6ff4c7c1ed00f</sys_update_name>
+        <sys_update_name>item_option_new_23a0b40307f69010f4e6ff4c7c1ed02f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-14 08:30:33</sys_updated_on>
+        <sys_updated_on>2020-08-27 11:19:12</sys_updated_on>
         <table/>
         <tooltip/>
         <type>5</type>
@@ -84,22 +84,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=58d9770c07e29010f4e6ff4c7c1ed00f"/>
-    <fx_price action="delete_multiple" query="id=58d9770c07e29010f4e6ff4c7c1ed00f"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=23a0b40307f69010f4e6ff4c7c1ed02f"/>
+    <fx_price action="delete_multiple" query="id=23a0b40307f69010f4e6ff4c7c1ed02f"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="GBP">GBP</currency>
         <field>price_if_checked</field>
-        <id>58d9770c07e29010f4e6ff4c7c1ed00f</id>
+        <id>23a0b40307f69010f4e6ff4c7c1ed02f</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-06 07:58:24</sys_created_on>
-        <sys_id>d9e9b38807e29010f4e6ff4c7c1ed0fb</sys_id>
+        <sys_created_on>2020-08-27 11:17:29</sys_created_on>
+        <sys_id>26d0380307f69010f4e6ff4c7c1ed00b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-06 07:58:24</sys_updated_on>
+        <sys_updated_on>2020-08-27 11:17:29</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -107,16 +107,16 @@
         <amount>0</amount>
         <currency display_value="GBP">GBP</currency>
         <field>rec_price_if_checked</field>
-        <id>58d9770c07e29010f4e6ff4c7c1ed00f</id>
+        <id>23a0b40307f69010f4e6ff4c7c1ed02f</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-06 07:58:24</sys_created_on>
-        <sys_id>91e9b38807e29010f4e6ff4c7c1ed0fb</sys_id>
+        <sys_created_on>2020-08-27 11:17:29</sys_created_on>
+        <sys_id>66d0380307f69010f4e6ff4c7c1ed00a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-06 07:58:24</sys_updated_on>
+        <sys_updated_on>2020-08-27 11:17:29</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

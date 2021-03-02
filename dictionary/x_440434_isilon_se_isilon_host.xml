@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Isilon Host" max_length="40" name="x_440434_isilon_se_isilon_host" type="collection">
-        <element label="Host IP" max_length="40" name="host_ip" type="string"/>
-        <element label="Password" max_length="255" name="password" type="password2"/>
-        <element default="8080" label="Port" max_length="10" name="port" type="string"/>
-        <element label="Username" max_length="20" name="username" type="string"/>
-    </element>
-</database>

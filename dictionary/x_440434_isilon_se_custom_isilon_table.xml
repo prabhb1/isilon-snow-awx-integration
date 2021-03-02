@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Custom_Isilon_Json" max_length="40" name="x_440434_isilon_se_custom_isilon_table" sizeclass="5600" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=access_zone" label="access_zone" max_length="40" name="u_access_zone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=autofs_path" label="autofs_path" max_length="40" name="u_autofs_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=cluster" label="cluster" max_length="40" name="u_cluster" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="path_id" max_length="40" name="u_path_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=physical_path" label="physical_path" max_length="40" name="u_physical_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=posix_check_status" label="posix_check_status" max_length="40" name="u_posix_check_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=posix_group" label="posix_group" max_length="40" name="u_posix_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=posix_mode" label="posix_mode" max_length="40" name="u_posix_mode" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=posix_owner" label="posix_owner" max_length="40" name="u_posix_owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=quota_cur_hard_limit_bytes" label="quota_cur_hard_limit_bytes" max_length="40" name="u_quota_cur_hard_limit_bytes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=quota_cur_log_usage_bytes" label="quota_cur_log_usage_bytes" max_length="40" name="u_quota_cur_log_usage_bytes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=quota_id" label="quota_id" max_length="40" name="u_quota_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=smb_permissions" label="smb_permissions" max_length="359" name="u_smb_permissions" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=smb_run_as_root" label="smb_run_as_root" max_length="40" name="u_smb_run_as_root" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=smb_sharename" label="smb_sharename" max_length="40" name="u_smb_sharename" type="string"/>
+    </element>
+</database>

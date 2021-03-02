@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_440434_isilon_se_isilon_host</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-15 11:47:37</sys_created_on>
+        <sys_id>a06b9fcd07021810f4e6ff4c7c1ed041</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_440434_isilon_se_isilon_host</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>ua_table_licensing_config_a06b9fcd07021810f4e6ff4c7c1ed041</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-15 11:47:37</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</application>
+        <file_path/>
+        <instance_id>9f6ce969dbea00944d2bac44d49619bb</instance_id>
+        <instance_name>dev97564</instance_name>
+        <name>ua_table_licensing_config_a06b9fcd07021810f4e6ff4c7c1ed041</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_440434_isilon_se_isilon_host</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-07-15 11:47:37</sys_created_on><sys_id>a06b9fcd07021810f4e6ff4c7c1ed041</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_440434_isilon_se_isilon_host</sys_name><sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package><sys_policy/><sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope><sys_update_name>ua_table_licensing_config_a06b9fcd07021810f4e6ff4c7c1ed041</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-07-15 11:47:37</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>-1731297432</payload_hash>
+        <record_name>x_440434_isilon_se_isilon_host</record_name>
+        <reverted_from/>
+        <source>30a4878507ced410f4e6ff4c7c1ed0f6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-15 11:47:37</sys_created_on>
+        <sys_id>e86b9fcd07021810f4e6ff4c7c1ed042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173524d32de0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-15 11:47:37</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>246b9fcd2002181049ee800c679ce942</update_guid>
+        <update_guid_history>246b9fcd2002181049ee800c679ce942:-1731297432</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-02 08:55:22</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>25dcd3d9b1434290b1988d9281188100</sys_id>
+        <sys_metadata>a06b9fcd07021810f4e6ff4c7c1ed041</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_440434_isilon_se_isilon_host</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_scope_delete display_value="">37456c6e5b9f4cb091a2c04f62f25081</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_a06b9fcd07021810f4e6ff4c7c1ed041</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_a06b9fcd07021810f4e6ff4c7c1ed041">e86b9fcd07021810f4e6ff4c7c1ed042</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-02 08:55:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

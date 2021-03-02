@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" label="Custom_Isilon" max_length="40" name="x_440434_isilon_se_custom_isilon" type="collection">
+        <element label="access_zone" mandatory="true" max_length="200" name="access_zone" type="string"/>
+        <element label="autofs_path" max_length="200" name="autofs_path" type="string"/>
+        <element label="cluster" mandatory="true" max_length="200" name="cluster" type="string"/>
+        <element label="path_id" mandatory="true" max_length="200" name="path_id" type="string" unique="true"/>
+        <element label="physical_path" max_length="200" name="physical_path" type="string"/>
+        <element label="quota_cur_hard_limit_bytes" max_length="40" name="quota_cur_hard_limit_bytes" type="string"/>
+        <element label="quota_cur_log_usage_bytes" max_length="40" name="quota_cur_log_usage_bytes" type="string"/>
+        <element label="quota_id" max_length="200" name="quota_id" type="string"/>
+        <element label="smb_sharename" max_length="200" name="smb_sharename" type="string"/>
+        <index name="index">
+            <element name="physical_path"/>
+        </index>
+        <index name="index2">
+            <element name="path_id"/>
+        </index>
+    </element>
+</database>

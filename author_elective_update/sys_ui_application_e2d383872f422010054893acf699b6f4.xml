@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Custom_Isilon_Table</name>
+        <order/>
+        <roles>x_440434_isilon_se.custom_isilon_table_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-05 11:23:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e2d383872f422010054893acf699b6f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom_Isilon_Table</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>sys_ui_application_e2d383872f422010054893acf699b6f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-05 11:23:48</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</application>
+        <file_path/>
+        <instance_id>c5403ebcdb81574c4c1ff70fbf961905</instance_id>
+        <instance_name>dev53603</instance_name>
+        <name>sys_ui_application_e2d383872f422010054893acf699b6f4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Custom_Isilon_Table</name><order/><roles>x_440434_isilon_se.custom_isilon_table_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-02-05 11:23:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e2d383872f422010054893acf699b6f4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Custom_Isilon_Table</sys_name><sys_overrides/><sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package><sys_policy/><sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope><sys_update_name>sys_ui_application_e2d383872f422010054893acf699b6f4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-02-05 11:23:48</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>469857802</payload_hash>
+        <record_name>Custom_Isilon_Table</record_name>
+        <reverted_from/>
+        <source>30a4878507ced410f4e6ff4c7c1ed0f6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-05 11:23:48</sys_created_on>
+        <sys_id>62d3c3872f422010054893acf699b603</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17771ef0e4f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-05 11:23:48</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>aad3c387a3422010f1b6fe4098710e02</update_guid>
+        <update_guid_history>aad3c387a3422010f1b6fe4098710e02:469857802</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-05 13:20:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>9edb2e769621445c845c8e24fed65781</sys_id>
+        <sys_metadata>e2d383872f422010054893acf699b6f4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom_Isilon_Table</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_scope_delete display_value="">37456c6e5b9f4cb091a2c04f62f25081</sys_scope_delete>
+        <sys_update_name>sys_ui_application_e2d383872f422010054893acf699b6f4</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_e2d383872f422010054893acf699b6f4">62d3c3872f422010054893acf699b603</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-05 13:20:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

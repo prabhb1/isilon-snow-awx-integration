@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_smb_permissions" label="smb_permissions" language="en" table="x_440434_isilon_se_custom_isilon_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_smb_permissions</element>
+            <help/>
+            <hint/>
+            <label>smb_permissions</label>
+            <language>en</language>
+            <name>x_440434_isilon_se_custom_isilon_table</name>
+            <plural>smb_permissions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-05 13:01:55</sys_created_on>
+            <sys_id>3b4a57872f822010054893acf699b634</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>smb_permissions</sys_name>
+            <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+            <sys_update_name>sys_documentation_x_440434_isilon_se_custom_isilon_table_u_smb_permissions_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-05 13:01:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

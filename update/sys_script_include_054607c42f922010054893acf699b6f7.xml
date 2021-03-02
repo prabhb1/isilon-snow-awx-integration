@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_440434_isilon_se.getQuotaDetails</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>getQuotaDetails</name>
+        <script><![CDATA[var getQuotaDetails = Class.create();
+getQuotaDetails.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+   getNfsPath: function() {
+	var tab = new GlideRecord('x_440434_isilon_se_custom_isilon');
+	tab.query();
+	var val = [];
+	while(tab.next()) {
+		if (tab.getValue('autofs_path') != "" || tab.getValue('autofs_path') != null) {
+			val.push(tab.getValue('autofs_path'));
+		}
+	}
+	var jsonVal = JSON.stringify(val);
+	return jsonVal;
+   },
+	
+	getSmbPath: function() {
+	var table = new GlideRecord('x_440434_isilon_se_custom_isilon');
+	table.query();
+	var value = [];
+	while(table.next()) {
+		if (table.getValue('smb_sharename') != "" || table.getValue('smb_sharename') != null) {
+			var path = "\\\\" + table.getValue('cluster') + "\\" + table.getValue('smb_sharename');
+			value.push(path);
+		}
+	}
+    var jsonValue = JSON.stringify(value);
+	return jsonValue;
+   },
+	
+   getNfsQuotaValues: function() {
+    var quota_path = this.getParameter('quota_path');
+    var tabl = new GlideRecord('x_440434_isilon_se_custom_isilon');
+	tabl.addQuery('autofs_path',quota_path);
+	tabl.query();
+    var quota_usage = {};
+	while(tabl.next()) {
+		quota_usage.cur_limit = tabl.getValue('quota_cur_hard_limit_bytes');
+		quota_usage.cur_usage = tabl.getValue('quota_cur_log_usage_bytes');
+	}
+    var jsonVa = JSON.stringify(quota_usage);
+	return jsonVa;
+   },
+	
+   getSmbQuotaValues: function() {
+    var quota_path = this.getParameter('quota_path');  
+    var matches = [];
+    matches = quota_path.toString().match(/\\\\(.*)\\(.*)/);
+    var cluster = matches[1];
+	var smb_sharename = matches[2];
+    
+    var tables = new GlideRecord('x_440434_isilon_se_custom_isilon');
+	tables.addQuery('cluster',cluster);
+	tables.addQuery('smb_sharename',smb_sharename);
+	tables.query();
+    var quota_usa = {};
+	while(tables.next()) {
+		quota_usa.cur_limit = tables.getValue('quota_cur_hard_limit_bytes');
+		quota_usa.cur_usage = tables.getValue('quota_cur_log_usage_bytes');
+	}
+	return JSON.stringify(quota_usa);
+   },
+	
+   getNfsQuotaDetails: function(quota_path) {
+    var tabl = new GlideRecord('x_440434_isilon_se_custom_isilon');
+	tabl.addQuery('autofs_path',quota_path);
+	tabl.query();
+    var quota_usage = {};
+	while(tabl.next()) {
+		quota_usage.cur_limit = tabl.getValue('quota_cur_hard_limit_bytes');
+		quota_usage.cur_usage = tabl.getValue('quota_cur_log_usage_bytes');
+        quota_usage.access_zone = tabl.getValue('access_zone');
+		quota_usage.smb_sharename = tabl.getValue('smb_sharename');
+		quota_usage.physical_path = tabl.getValue('physical_path');
+		quota_usage.cluster = tabl.getValue('cluster');
+	}
+    var jsonVa = JSON.stringify(quota_usage);
+	return jsonVa;
+   },
+	
+   getSmbQuotaDetails: function(quota_path) {
+    var matches = [];
+    matches = quota_path.toString().match(/\\\\(.*)\\(.*)/);
+    var cluster = matches[1];
+	var smb_sharename = matches[2];
+    
+    var tables = new GlideRecord('x_440434_isilon_se_custom_isilon');
+	tables.addQuery('cluster',cluster);
+	tables.addQuery('smb_sharename',smb_sharename);
+	tables.query();
+    var quota_usa = {};
+	while(tables.next()) {
+		quota_usa.cur_limit = tables.getValue('quota_cur_hard_limit_bytes');
+		quota_usa.cur_usage = tables.getValue('quota_cur_log_usage_bytes');
+        quota_usa.access_zone = tables.getValue('access_zone');
+		quota_usa.smb_sharename = tables.getValue('smb_sharename');
+		quota_usa.physical_path = tables.getValue('physical_path');
+		quota_usa.cluster = tables.getValue('cluster');
+	}
+	return JSON.stringify(quota_usa);
+   },
+   
+   type: 'getQuotaDetails'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-08 14:18:07</sys_created_on>
+        <sys_id>054607c42f922010054893acf699b6f7</sys_id>
+        <sys_mod_count>67</sys_mod_count>
+        <sys_name>getQuotaDetails</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>sys_script_include_054607c42f922010054893acf699b6f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-01 15:07:15</sys_updated_on>
+    </sys_script_include>
+</record_update>

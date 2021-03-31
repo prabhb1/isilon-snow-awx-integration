@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Resize Isilon Quota">54d5268c2f122010054893acf699b638</sc_cat_item>
+        <sc_category display_value="Isilon-SC">0ae423732fc32010cada54492799b609</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-29 14:47:05</sys_created_on>
+        <sys_id>1b05ab732fc32010cada54492799b63b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Isilon-SC.Resize Isilon Quota</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>sc_cat_item_category_1b05ab732fc32010cada54492799b63b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-29 14:47:05</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</application>
+        <file_path/>
+        <instance_id>c5403ebcdb81574c4c1ff70fbf961905</instance_id>
+        <instance_name>dev53603</instance_name>
+        <name>sc_cat_item_category_1b05ab732fc32010cada54492799b63b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Resize Isilon Quota">54d5268c2f122010054893acf699b638</sc_cat_item><sc_category display_value="Isilon-SC">0ae423732fc32010cada54492799b609</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-29 14:47:05</sys_created_on><sys_id>1b05ab732fc32010cada54492799b63b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Isilon-SC.Resize Isilon Quota</sys_name><sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package><sys_policy/><sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope><sys_update_name>sc_cat_item_category_1b05ab732fc32010cada54492799b63b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-29 14:47:05</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-152863147</payload_hash>
+        <record_name>Isilon-SC.Resize Isilon Quota</record_name>
+        <reverted_from/>
+        <source>30a4878507ced410f4e6ff4c7c1ed0f6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-29 14:47:05</sys_created_on>
+        <sys_id>5f05ab732fc32010cada54492799b63d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1787e73dc1d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-29 14:47:05</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>9705ab73ffc32010f32da4818ca73d3d</update_guid>
+        <update_guid_history>9705ab73ffc32010f32da4818ca73d3d:-152863147</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Isilon-SC.Resize Isilon Quota">4241bf7b2fc32010cada54492799b677</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-29 15:40:31</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>c03bcb71af014100ac2ae9145fd90000</sys_id>
+        <sys_metadata>1b05ab732fc32010cada54492799b63b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Isilon-SC.Resize Isilon Quota</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_parent display_value="">54d5268c2f122010054893acf699b638</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_scope_delete display_value="">37456c6e5b9f4cb091a2c04f62f25081</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_1b05ab732fc32010cada54492799b63b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_1b05ab732fc32010cada54492799b63b">5f05ab732fc32010cada54492799b63d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-29 15:40:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -27,21 +27,21 @@
         <model/>
         <name>Resize Isilon Quota</name>
         <no_attachment_v2>true</no_attachment_v2>
-        <no_cart>true</no_cart>
+        <no_cart>false</no_cart>
         <no_cart_v2>true</no_cart_v2>
         <no_delivery_time_v2>true</no_delivery_time_v2>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
         <no_proceed_checkout>false</no_proceed_checkout>
-        <no_quantity>true</no_quantity>
+        <no_quantity>false</no_quantity>
         <no_quantity_v2>true</no_quantity_v2>
-        <no_search>true</no_search>
+        <no_search>false</no_search>
         <no_wishlist_v2>true</no_wishlist_v2>
         <omit_price>false</omit_price>
         <order>0</order>
         <ordered_item_link/>
         <picture/>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=54d5268c2f122010054893acf699b638&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=5e51bf7b2fc32010cada54492799b6d0&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
@@ -55,41 +55,41 @@
         <start_closed>false</start_closed>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-02-08 11:48:43</sys_created_on>
-        <sys_id>54d5268c2f122010054893acf699b638</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2021-03-29 15:41:21</sys_created_on>
+        <sys_id>5e51bf7b2fc32010cada54492799b6d0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Resize Isilon Quota</sys_name>
         <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
-        <sys_update_name>sc_cat_item_54d5268c2f122010054893acf699b638</sys_update_name>
+        <sys_update_name>sc_cat_item_5e51bf7b2fc32010cada54492799b6d0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-02-23 10:28:13</sys_updated_on>
+        <sys_updated_on>2021-03-29 16:17:47</sys_updated_on>
         <template/>
         <type>item</type>
-        <use_sc_layout>false</use_sc_layout>
+        <use_sc_layout>true</use_sc_layout>
         <vendor/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
         <workflow display_value="Resize Isilon Quota">f4fe2ae82f622010054893acf699b6b3</workflow>
     </sc_cat_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=54d5268c2f122010054893acf699b638"/>
-    <fx_price action="delete_multiple" query="id=54d5268c2f122010054893acf699b638"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=5e51bf7b2fc32010cada54492799b6d0"/>
+    <fx_price action="delete_multiple" query="id=5e51bf7b2fc32010cada54492799b6d0"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="GBP">GBP</currency>
         <field>price</field>
-        <id>54d5268c2f122010054893acf699b638</id>
+        <id>5e51bf7b2fc32010cada54492799b6d0</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-02-08 11:48:44</sys_created_on>
-        <sys_id>4d56220c2f122010054893acf699b63d</sys_id>
+        <sys_created_on>2021-03-29 15:41:21</sys_created_on>
+        <sys_id>0a713b7b2fc32010cada54492799b62c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-02-08 11:48:44</sys_updated_on>
+        <sys_updated_on>2021-03-29 15:41:21</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>
@@ -97,16 +97,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>recurring_price</field>
-        <id>54d5268c2f122010054893acf699b638</id>
+        <id>5e51bf7b2fc32010cada54492799b6d0</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-02-08 11:48:44</sys_created_on>
-        <sys_id>4956aa402f522010054893acf699b690</sys_id>
+        <sys_created_on>2021-03-29 15:41:21</sys_created_on>
+        <sys_id>de713b7b2fc32010cada54492799b62d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-02-08 11:48:44</sys_updated_on>
+        <sys_updated_on>2021-03-29 15:41:21</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>

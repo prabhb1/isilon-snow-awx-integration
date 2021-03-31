@@ -13,7 +13,7 @@
         <file_retrieval_method>FTP</file_retrieval_method>
         <format>JSON</format>
         <glide_keystore>false</glide_keystore>
-        <header_row>0</header_row>
+        <header_row>1</header_row>
         <import_set_table_label>Custom_Isilon_Table</import_set_table_label>
         <import_set_table_name>x_440434_isilon_se_custom_isilon_table</import_set_table_name>
         <instance_name/>
@@ -37,21 +37,21 @@
         <scp_port>22</scp_port>
         <scp_server>ftp.emc.com</scp_server>
         <scp_user_name>kUEi70mRC</scp_user_name>
-        <sheet_number>0</sheet_number>
+        <sheet_number>1</sheet_number>
         <sql_statement/>
         <ssh_keyfile_path/>
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-02-05 12:57:06</sys_created_on>
         <sys_id>8b97d7072f822010054893acf699b6c7</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Custom_Isilon_Json</sys_name>
         <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
         <sys_update_name>sys_data_source_8b97d7072f822010054893acf699b6c7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-02-09 19:04:59</sys_updated_on>
+        <sys_updated_on>2021-03-22 13:23:42</sys_updated_on>
         <table_name/>
         <type>File</type>
         <use_integrated_authentication>false</use_integrated_authentication>

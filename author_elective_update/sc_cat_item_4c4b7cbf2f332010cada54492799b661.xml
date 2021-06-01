@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Storage Installation_old</name>
+        <no_attachment_v2>true</no_attachment_v2>
+        <no_cart>true</no_cart>
+        <no_cart_v2>true</no_cart_v2>
+        <no_delivery_time_v2>true</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>true</no_quantity>
+        <no_quantity_v2>true</no_quantity_v2>
+        <no_search>true</no_search>
+        <no_wishlist_v2>true</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=4c4b7cbf2f332010cada54492799b661&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method>submit</request_method>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <short_description/>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:12:55</sys_created_on>
+        <sys_id>4c4b7cbf2f332010cada54492799b661</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Storage Installation_old</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>sc_cat_item_4c4b7cbf2f332010cada54492799b661</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-31 10:38:53</sys_updated_on>
+        <template/>
+        <type>item</type>
+        <use_sc_layout>false</use_sc_layout>
+        <vendor/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow display_value="Storage Installation">8fd9c0822f143010cada54492799b694</workflow>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=4c4b7cbf2f332010cada54492799b661"/>
+    <fx_price action="DELETE" query="id=4c4b7cbf2f332010cada54492799b661"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="GBP">GBP</currency>
+        <field>price</field>
+        <id>4c4b7cbf2f332010cada54492799b661</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:12:55</sys_created_on>
+        <sys_id>056bf83f2f332010cada54492799b6ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:12:55</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>4c4b7cbf2f332010cada54492799b661</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:12:55</sys_created_on>
+        <sys_id>4d6bf83f2f332010cada54492799b6ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:12:55</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</application>
+        <file_path/>
+        <instance_id>c5403ebcdb81574c4c1ff70fbf961905</instance_id>
+        <instance_name>dev53603</instance_name>
+        <name>sc_cat_item_4c4b7cbf2f332010cada54492799b661</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category/><cost>0</cost><custom_cart/><delivery_plan/><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><display_price_property>non_zero</display_price_property><entitlement_script/><group/><hide_sp>false</hide_sp><icon/><ignore_price>true</ignore_price><image/><list_price>0</list_price><location/><mandatory_attachment>false</mandatory_attachment><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Storage Installation_old</name><no_attachment_v2>true</no_attachment_v2><no_cart>true</no_cart><no_cart_v2>true</no_cart_v2><no_delivery_time_v2>true</no_delivery_time_v2><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>true</no_quantity><no_quantity_v2>true</no_quantity_v2><no_search>true</no_search><no_wishlist_v2>true</no_wishlist_v2><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=4c4b7cbf2f332010cada54492799b661&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><request_method>submit</request_method><roles/><sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description/><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-05 09:12:55</sys_created_on><sys_id>4c4b7cbf2f332010cada54492799b661</sys_id><sys_mod_count>16</sys_mod_count><sys_name>Storage Installation_old</sys_name><sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package><sys_policy/><sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope><sys_update_name>sc_cat_item_4c4b7cbf2f332010cada54492799b661</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-31 10:38:53</sys_updated_on><template/><type>item</type><use_sc_layout>false</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow display_value="Storage Installation">8fd9c0822f143010cada54492799b694</workflow></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=4c4b7cbf2f332010cada54492799b661"/><fx_price action="delete_multiple" query="id=4c4b7cbf2f332010cada54492799b661"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="GBP">GBP</currency><field>price</field><id>4c4b7cbf2f332010cada54492799b661</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-05 09:12:55</sys_created_on><sys_id>056bf83f2f332010cada54492799b6ff</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-05 09:12:55</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>4c4b7cbf2f332010cada54492799b661</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-05 09:12:55</sys_created_on><sys_id>4d6bf83f2f332010cada54492799b6ff</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-05 09:12:55</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-1032602213</payload_hash>
+        <record_name>Storage Installation_old</record_name>
+        <reverted_from/>
+        <source>30a4878507ced410f4e6ff4c7c1ed0f6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-31 10:38:53</sys_created_on>
+        <sys_id>4e6887402fa03010cada54492799b684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179c20145cb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-31 10:38:53</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>c6688740e8a0301095b3088eb7483284</update_guid>
+        <update_guid_history>c6688740e8a0301095b3088eb7483284:-1032602213,c5c54b8cf86030106937ef7c6d2f64a9:-947135872,81a58b8cc3603010977c878466c1b840:1622202261,f565078ca8603010448ba79080e2b1d3:922997912,1945838c2e60301039433e3deab352a9:-1032602213,7f15cf4ce96030107a0ddcd1033f8382:-947135872,37f44f4c26603010fa1641664ac2e5d7:-1032602213,c454c70c2a60301020ae76b8804d718f:-947135872,870f6b0ab05030102f1a7bacc8b27f17:1413677952,35636715de483010880d2303c9712569:1153562427,35636715de483010880d2303c9712569:1153562427,c15327156d483010f35550e2a3fff16e:-1297815901,c46d3073d573201008734c4953ee68df:1153562427,584df83325732010393c9e61128a30ca:-869200229,8b1d7c33827320100e0461d5e5fd345a:-1396004169,516bfcbf3e332010eba2a97358e9a844:-472368353</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Storage Installation_old">d1e797c82fa03010cada54492799b668</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-31 11:46:34</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>1a3d322f371c465d997b50ac3d4bf149</sys_id>
+        <sys_metadata>4c4b7cbf2f332010cada54492799b661</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Storage Installation_old</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_scope_delete display_value="">37456c6e5b9f4cb091a2c04f62f25081</sys_scope_delete>
+        <sys_update_name>sc_cat_item_4c4b7cbf2f332010cada54492799b661</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_4c4b7cbf2f332010cada54492799b661">4e6887402fa03010cada54492799b684</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-31 11:46:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

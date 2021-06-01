@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_regex">
+    <question_regex action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>AlphanumericString</name>
+        <regex>^[a-zA-Z0-9-_]*$</regex>
+        <regex_flag/>
+        <sys_class_name>question_regex</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-25 11:50:50</sys_created_on>
+        <sys_id>f19edc1a2fd03010cada54492799b613</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AlphanumericString</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>question_regex_f19edc1a2fd03010cada54492799b613</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-01 14:33:18</sys_updated_on>
+        <validation_message>Special characters not allowed</validation_message>
+    </question_regex>
+    <sys_translated_text action="delete_multiple" query="documentkey=f19edc1a2fd03010cada54492799b613"/>
+</record_update>

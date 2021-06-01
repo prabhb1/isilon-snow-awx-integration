@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <misc>0</misc>
+        <order>200</order>
+        <question display_value="Enter the Storage Class">6e8a7f0c07e29010f4e6ff4c7c1ed07b</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-06 08:02:14</sys_created_on>
+        <sys_id>bfba334c07e29010f4e6ff4c7c1ed0e2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Cluster Appropriate with Encryption</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>question_choice_bfba334c07e29010f4e6ff4c7c1ed0e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-14 08:22:37</sys_updated_on>
+        <text>Cluster Appropriate with Encryption</text>
+        <value>CA-SED</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=bfba334c07e29010f4e6ff4c7c1ed0e2"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>bfba334c07e29010f4e6ff4c7c1ed0e2</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-06 08:02:14</sys_created_on>
+        <sys_id>6dcab70c07e29010f4e6ff4c7c1ed029</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-06 08:02:14</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>bfba334c07e29010f4e6ff4c7c1ed0e2</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-06 08:02:14</sys_created_on>
+        <sys_id>25cab70c07e29010f4e6ff4c7c1ed029</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-06 08:02:14</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</application>
+        <file_path/>
+        <instance_id>9f6ce969dbea00944d2bac44d49619bb</instance_id>
+        <instance_name>dev97564</instance_name>
+        <name>question_choice_bfba334c07e29010f4e6ff4c7c1ed0e2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><misc>0</misc><order>200</order><question display_value="Enter the Storage Class">6e8a7f0c07e29010f4e6ff4c7c1ed07b</question><rec_misc>0</rec_misc><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-06 08:02:14</sys_created_on><sys_id>bfba334c07e29010f4e6ff4c7c1ed0e2</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Cluster Appropriate with Encryption</sys_name><sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package><sys_policy/><sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope><sys_update_name>question_choice_bfba334c07e29010f4e6ff4c7c1ed0e2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-14 08:22:37</sys_updated_on><text>Cluster Appropriate with Encryption</text><value>CA-SED</value></question_choice><fx_price action="delete_multiple" query="id=bfba334c07e29010f4e6ff4c7c1ed0e2"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>misc</field><id>bfba334c07e29010f4e6ff4c7c1ed0e2</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-06 08:02:14</sys_created_on><sys_id>6dcab70c07e29010f4e6ff4c7c1ed029</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-06 08:02:14</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>rec_misc</field><id>bfba334c07e29010f4e6ff4c7c1ed0e2</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2020-08-06 08:02:14</sys_created_on><sys_id>25cab70c07e29010f4e6ff4c7c1ed029</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-08-06 08:02:14</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-2107149557</payload_hash>
+        <record_name>Cluster Appropriate with Encryption</record_name>
+        <reverted_from/>
+        <source>30a4878507ced410f4e6ff4c7c1ed0f6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-14 08:22:37</sys_created_on>
+        <sys_id>5a2ccdf607a2d010f4e6ff4c7c1ed0b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173ec104b3c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-14 08:22:37</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>d22ccdf689a2d01081def544948e62b2</update_guid>
+        <update_guid_history>d22ccdf689a2d01081def544948e62b2:-2107149557,36db0df67da2d01098ed766cfac1449f:-356758133,e1cab70cf1e29010749df8fc5e07b22b:-518615144</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cluster Appropriate with Encryption">70c5383b2f332010cada54492799b6bc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:48:19</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>0315e7aad794486a9b03480b601b6671</sys_id>
+        <sys_metadata>bfba334c07e29010f4e6ff4c7c1ed0e2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cluster Appropriate with Encryption</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_scope_delete display_value="">37456c6e5b9f4cb091a2c04f62f25081</sys_scope_delete>
+        <sys_update_name>question_choice_bfba334c07e29010f4e6ff4c7c1ed0e2</sys_update_name>
+        <sys_update_version display_value="question_choice_bfba334c07e29010f4e6ff4c7c1ed0e2">5a2ccdf607a2d010f4e6ff4c7c1ed0b2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 08:48:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

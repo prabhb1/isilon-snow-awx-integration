@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Storage Installation">4c4b7cbf2f332010cada54492799b661</sc_cat_item>
+        <sc_category display_value="Isilon Service Center">aad38aac2f422010054893acf699b61a</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:12:55</sys_created_on>
+        <sys_id>516bfcbf2f332010cada54492799b63e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Isilon Service Center.Storage Installation</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>sc_cat_item_category_516bfcbf2f332010cada54492799b63e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:12:55</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</application>
+        <file_path/>
+        <instance_id>c5403ebcdb81574c4c1ff70fbf961905</instance_id>
+        <instance_name>dev53603</instance_name>
+        <name>sc_cat_item_category_516bfcbf2f332010cada54492799b63e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Storage Installation">4c4b7cbf2f332010cada54492799b661</sc_cat_item><sc_category display_value="Isilon Service Center">aad38aac2f422010054893acf699b61a</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-05 09:12:55</sys_created_on><sys_id>516bfcbf2f332010cada54492799b63e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Isilon Service Center.Storage Installation</sys_name><sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package><sys_policy/><sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope><sys_update_name>sc_cat_item_category_516bfcbf2f332010cada54492799b63e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-05 09:12:55</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1761993092</payload_hash>
+        <record_name>Isilon Service Center.Storage Installation</record_name>
+        <reverted_from/>
+        <source>30a4878507ced410f4e6ff4c7c1ed0f6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:12:55</sys_created_on>
+        <sys_id>556bfcbf2f332010cada54492799b640</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1793bcd389d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:12:55</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>9d6bfcbf9e332010b804d5685a00d53f</update_guid>
+        <update_guid_history>9d6bfcbf9e332010b804d5685a00d53f:1761993092</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Isilon Service Center.Storage Installation">7c5327152f483010cada54492799b666</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-10 13:17:32</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>0dde16d60edb40e08bd6c5f40e376864</sys_id>
+        <sys_metadata>516bfcbf2f332010cada54492799b63e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Isilon Service Center.Storage Installation</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_parent display_value="">4c4b7cbf2f332010cada54492799b661</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_scope_delete display_value="">37456c6e5b9f4cb091a2c04f62f25081</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_516bfcbf2f332010cada54492799b63e</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_516bfcbf2f332010cada54492799b63e">556bfcbf2f332010cada54492799b640</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-10 13:17:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

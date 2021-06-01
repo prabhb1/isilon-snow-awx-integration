@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="DELETE">
+        <active>true</active>
+        <activity_stages>{"activities":{"b00df8332f732010cada54492799b677":"b40df8332f732010cada54492799b671","f80df8332f732010cada54492799b67b":"7c0df8332f732010cada54492799b671","740df8332f732010cada54492799b678":"f80df8332f732010cada54492799b671","700df8332f732010cada54492799b67f":"f00df8332f732010cada54492799b672","bc0df8332f732010cada54492799b672":"780df8332f732010cada54492799b671","bc0df8332f732010cada54492799b67a":"700df8332f732010cada54492799b672"},"ends":["700df8332f732010cada54492799b679"],"subflows":[],"stages":{"700df8332f732010cada54492799b672":{"duration":"","order":200,"stageId":"700df8332f732010cada54492799b672","name":"Call from Snow to AWX","value":"200"},"780df8332f732010cada54492799b671":{"duration":"","order":500,"stageId":"780df8332f732010cada54492799b671","name":"Request Completed - Successful","value":"600"},"f80df8332f732010cada54492799b671":{"duration":"","order":500,"stageId":"f80df8332f732010cada54492799b671","name":"Request failed - Incomplete ","value":"700"},"f00df8332f732010cada54492799b672":{"duration":"","order":300,"stageId":"f00df8332f732010cada54492799b672","name":"Waiting for the execution","value":"300"},"b40df8332f732010cada54492799b671":{"duration":"","order":400,"stageId":"b40df8332f732010cada54492799b671","name":"Call to AWX - Completed Successful","value":"400"},"7c0df8332f732010cada54492799b671":{"duration":"","order":400,"stageId":"7c0df8332f732010cada54492799b671","name":"Call to AWX - Incomplete","value":"500"}}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>bc0df8332f732010cada54492799b679,bc0df8332f732010cada54492799b67a,8d0df8332f732010cada54492799b682,f00df8332f732010cada54492799b675,700df8332f732010cada54492799b67f</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>bc0df8332f732010cada54492799b679,bc0df8332f732010cada54492799b67a,8d0df8332f732010cada54492799b682,f00df8332f732010cada54492799b675,700df8332f732010cada54492799b67f,380df8332f732010cada54492799b67c,b00df8332f732010cada54492799b677,f80df8332f732010cada54492799b67b,bc0df8332f732010cada54492799b672,740df8332f732010cada54492799b678,700df8332f732010cada54492799b679</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Storage Installation</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">bc0df8332f732010cada54492799b679</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>b00df8332f732010cada54492799b66e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:08</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Storage Installation">e00dfcff2f332010cada54492799b6c3</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="DELETE">
+        <access>public</access>
+        <description/>
+        <name>Storage Installation</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e00dfcff2f332010cada54492799b6c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Storage Installation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_update_name>wf_workflow_e00dfcff2f332010cada54492799b6c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="DELETE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>fc0df8332f732010cada54492799b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>100</value>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Call from Snow to AWX</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>200</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>700df8332f732010cada54492799b672</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>200</value>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Waiting for the execution</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>300</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>f00df8332f732010cada54492799b672</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>300</value>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Call to AWX - Completed Successful</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>400</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>b40df8332f732010cada54492799b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>400</value>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Call to AWX - Incomplete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>400</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>7c0df8332f732010cada54492799b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>500</value>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Request Completed - Successful</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>500</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>780df8332f732010cada54492799b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>600</value>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+    </wf_stage>
+    <wf_stage action="DELETE">
+        <name>Request failed - Incomplete </name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>500</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>f80df8332f732010cada54492799b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>700</value>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+    </wf_stage>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>bc0df8332f732010cada54492799b679</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=bc0df8332f732010cada54492799b679"/>
+    <wf_condition action="DELETE">
+        <activity display_value="Begin">bc0df8332f732010cada54492799b679</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f40df8332f732010cada54492799b67a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Check to see the status of the job</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>380df8332f732010cada54492799b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>476</x>
+        <y>279</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=380df8332f732010cada54492799b67c"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>380df8332f732010cada54492799b67c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>300df8332f732010cada54492799b67d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+   answer = ifScript();&#13;
+&#13;
+  function ifScript() {&#13;
+	var statusVal = workflow.scratchpad.endResVal;&#13;
+     if (statusVal === 'successful') {&#13;
+        return 'yes';&#13;
+     }&#13;
+     return 'no';&#13;
+  }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>380df8332f732010cada54492799b67c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>7c0df8332f732010cada54492799b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>380df8332f732010cada54492799b67c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b80df8332f732010cada54492799b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>380df8332f732010cada54492799b67c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b80df8332f732010cada54492799b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>380df8332f732010cada54492799b67c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>7c0df8332f732010cada54492799b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>380df8332f732010cada54492799b67c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>300df8332f732010cada54492799b67d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+   answer = ifScript();&#13;
+&#13;
+  function ifScript() {&#13;
+	var statusVal = workflow.scratchpad.endResVal;&#13;
+     if (statusVal === 'successful') {&#13;
+        return 'yes';&#13;
+     }&#13;
+     return 'no';&#13;
+  }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Check to see the status of the job">380df8332f732010cada54492799b67c</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b40df8332f732010cada54492799b67d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="DELETE">
+        <activity display_value="Check to see the status of the job">380df8332f732010cada54492799b67c</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>340df8332f732010cada54492799b67d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Check to see the status of the job</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f00df8332f732010cada54492799b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>492</x>
+        <y>10</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=f00df8332f732010cada54492799b675"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f00df8332f732010cada54492799b675</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>3c0df8332f732010cada54492799b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f00df8332f732010cada54492799b675</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>780df8332f732010cada54492799b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f00df8332f732010cada54492799b675</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>fc0df8332f732010cada54492799b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+   answer = ifScript();&#13;
+&#13;
+  function ifScript() {&#13;
+	var statusVal = workflow.scratchpad.endResVal;&#13;
+     if (statusVal === 'running') {&#13;
+        return 'yes';&#13;
+     }&#13;
+     return 'no';&#13;
+  }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f00df8332f732010cada54492799b675</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>780df8332f732010cada54492799b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f00df8332f732010cada54492799b675</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>3c0df8332f732010cada54492799b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f00df8332f732010cada54492799b675</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>fc0df8332f732010cada54492799b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+   answer = ifScript();&#13;
+&#13;
+  function ifScript() {&#13;
+	var statusVal = workflow.scratchpad.endResVal;&#13;
+     if (statusVal === 'running') {&#13;
+        return 'yes';&#13;
+     }&#13;
+     return 'no';&#13;
+  }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Check to see the status of the job">f00df8332f732010cada54492799b675</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>740df8332f732010cada54492799b676</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="DELETE">
+        <activity display_value="Check to see the status of the job">f00df8332f732010cada54492799b675</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f40df8332f732010cada54492799b676</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Default timer - 30 sec</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Waiting for the execution">f00df8332f732010cada54492799b672</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>700df8332f732010cada54492799b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>754</x>
+        <y>37</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=700df8332f732010cada54492799b67f"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>300df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>380df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>3c0df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>410df8332f732010cada54492799b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>740df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>780df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>7c0df8332f732010cada54492799b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>8d0df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>script</value>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b00df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b40df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b80df8332f732010cada54492799b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>c90df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f00df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+var jobIdVal = workflow.scratchpad.jobId;&#13;
+workflow.scratchpad.jobId = jobIdVal;&#13;
+answer = 30;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f40df8332f732010cada54492799b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>fc0df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>8d0df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>script</value>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f40df8332f732010cada54492799b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>300df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b80df8332f732010cada54492799b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b40df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>780df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>3c0df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>740df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>380df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>410df8332f732010cada54492799b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>7c0df8332f732010cada54492799b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b00df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>c90df8332f732010cada54492799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>fc0df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>700df8332f732010cada54492799b67f</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f00df8332f732010cada54492799b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+var jobIdVal = workflow.scratchpad.jobId;&#13;
+workflow.scratchpad.jobId = jobIdVal;&#13;
+answer = 30;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Default timer - 30 sec">700df8332f732010cada54492799b67f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>c50df8332f732010cada54492799b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>700df8332f732010cada54492799b679</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>814</x>
+        <y>213</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=700df8332f732010cada54492799b679"/>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Lanch the Ansible Script - Create share</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Call from Snow to AWX">700df8332f732010cada54492799b672</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>bc0df8332f732010cada54492799b67a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>36</x>
+        <y>207</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=bc0df8332f732010cada54492799b67a"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>bc0df8332f732010cada54492799b67a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>300df8332f732010cada54492799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>var id = "e2546fe207ba5010f4e6ff4c7c1ed093";&#13;
+var restApi = new Isilon_AWX_RestApi(id);&#13;
+var url = 'api/v2/job_templates/19/launch/';&#13;
+var jsonTry =  new global.JSON();&#13;
+&#13;
+var Protocol = current.variables.protocol;&#13;
+var ShareName = current.variables.share_name;&#13;
+var TopLevelDir = current.variables.top_level_mount_folder;&#13;
+var CapacityinGB = current.variables.size_required_in_mb;&#13;
+var AccessLevelOwner = current.variables.owner_access_level;&#13;
+//var AccessLevelGroup = current.variables.group_access_level;&#13;
+//var AccessLevelOthers = current.variables.everyone_access_level;&#13;
+var StorageTier = current.variables.storage_class;&#13;
+var RepliationRequired = current.variables.replication_required;&#13;
+var LocalSnapshotRequired = current.variables.local_snaphshot_required;&#13;
+gs.info("Checking...");&#13;
+var payLo = '{"extra_vars": { "Protocol":"' + Protocol + '","ShareName":"' + ShareName + '","TopLevelDir":"' + TopLevelDir + '","CapacityinGB":"' + CapacityinGB + '","AccessLevelOwner":"' + AccessLevelOwner +'","StorageTier":"' + StorageTier +'","LocalSnapshotRequired":"' + LocalSnapshotRequired + '","RepliationRequired":"' + RepliationRequired + '" } }';&#13;
+ var payload = jsonTry.decode(payLo);&#13;
+ var rest = restApi.RESTCall(url, "post", payload);&#13;
+ var res = JSON.parse(rest.responseBody);&#13;
+ var jobId = res['job'];&#13;
+ workflow.scratchpad.jobId = jobId;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>bc0df8332f732010cada54492799b67a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>300df8332f732010cada54492799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>var id = "e2546fe207ba5010f4e6ff4c7c1ed093";&#13;
+var restApi = new Isilon_AWX_RestApi(id);&#13;
+var url = 'api/v2/job_templates/19/launch/';&#13;
+var jsonTry =  new global.JSON();&#13;
+&#13;
+var Protocol = current.variables.protocol;&#13;
+var ShareName = current.variables.share_name;&#13;
+var TopLevelDir = current.variables.top_level_mount_folder;&#13;
+var CapacityinGB = current.variables.size_required_in_mb;&#13;
+var AccessLevelOwner = current.variables.owner_access_level;&#13;
+//var AccessLevelGroup = current.variables.group_access_level;&#13;
+//var AccessLevelOthers = current.variables.everyone_access_level;&#13;
+var StorageTier = current.variables.storage_class;&#13;
+var RepliationRequired = current.variables.replication_required;&#13;
+var LocalSnapshotRequired = current.variables.local_snaphshot_required;&#13;
+gs.info("Checking...");&#13;
+var payLo = '{"extra_vars": { "Protocol":"' + Protocol + '","ShareName":"' + ShareName + '","TopLevelDir":"' + TopLevelDir + '","CapacityinGB":"' + CapacityinGB + '","AccessLevelOwner":"' + AccessLevelOwner +'","StorageTier":"' + StorageTier +'","LocalSnapshotRequired":"' + LocalSnapshotRequired + '","RepliationRequired":"' + RepliationRequired + '" } }';&#13;
+ var payload = jsonTry.decode(payLo);&#13;
+ var rest = restApi.RESTCall(url, "post", payload);&#13;
+ var res = JSON.parse(rest.responseBody);&#13;
+ var jobId = res['job'];&#13;
+ workflow.scratchpad.jobId = jobId;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Lanch the Ansible Script - Create share">bc0df8332f732010cada54492799b67a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>340df8332f732010cada54492799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Launch the Ansible script - Run Job</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>8d0df8332f732010cada54492799b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>182</x>
+        <y>21</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=8d0df8332f732010cada54492799b682"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>8d0df8332f732010cada54492799b682</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>010df8332f732010cada54492799b683</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>var id = "e2546fe207ba5010f4e6ff4c7c1ed093";&#13;
+var restApi = new Isilon_AWX_RestApi(id);&#13;
+var jobId = workflow.scratchpad.jobId;&#13;
+var jobUrl = "api/v2/jobs/" + jobId + "/";&#13;
+var result = restApi.RESTCall(jobUrl, "get", "");&#13;
+var endValue = JSON.parse(result.responseBody);&#13;
+var endRes = endValue['status'];&#13;
+workflow.scratchpad.endResVal = endRes;&#13;
+gs.info("Status of the request:" + endRes);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>8d0df8332f732010cada54492799b682</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>010df8332f732010cada54492799b683</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>var id = "e2546fe207ba5010f4e6ff4c7c1ed093";&#13;
+var restApi = new Isilon_AWX_RestApi(id);&#13;
+var jobId = workflow.scratchpad.jobId;&#13;
+var jobUrl = "api/v2/jobs/" + jobId + "/";&#13;
+var result = restApi.RESTCall(jobUrl, "get", "");&#13;
+var endValue = JSON.parse(result.responseBody);&#13;
+var endRes = endValue['status'];&#13;
+workflow.scratchpad.endResVal = endRes;&#13;
+gs.info("Status of the request:" + endRes);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Launch the Ansible script - Run Job">8d0df8332f732010cada54492799b682</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>050df8332f732010cada54492799b683</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Request Complete</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Call to AWX - Completed Successful">b40df8332f732010cada54492799b671</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>b00df8332f732010cada54492799b677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>526</x>
+        <y>429</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=b00df8332f732010cada54492799b677"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>b00df8332f732010cada54492799b677</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>380df8332f732010cada54492799b677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>state=3^work_notes=The request completed successfully through Automation^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>b00df8332f732010cada54492799b677</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>380df8332f732010cada54492799b677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>state=3^work_notes=The request completed successfully through Automation^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Request Complete">b00df8332f732010cada54492799b677</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>bc0df8332f732010cada54492799b677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Request Incomplete</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Call to AWX - Incomplete">7c0df8332f732010cada54492799b671</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f80df8332f732010cada54492799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>18</x>
+        <y>431</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=f80df8332f732010cada54492799b67b"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f80df8332f732010cada54492799b67b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>7c0df8332f732010cada54492799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>state=4^work_notes=The request completed with the error through Automation^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>f80df8332f732010cada54492799b67b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>7c0df8332f732010cada54492799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>state=4^work_notes=The request completed with the error through Automation^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Request Incomplete">f80df8332f732010cada54492799b67b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>700df8332f732010cada54492799b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Script to close the request</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Request failed - Incomplete ">f80df8332f732010cada54492799b671</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>740df8332f732010cada54492799b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>292</x>
+        <y>458</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=740df8332f732010cada54492799b678"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>740df8332f732010cada54492799b678</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f40df8332f732010cada54492799b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>var req = new GlideRecord('sc_request');&#13;
+req.addQuery('sys_id', current.request);&#13;
+req.query();&#13;
+while (req.next()) {&#13;
+	req.stage = 'closed_incomplete';&#13;
+	req.state = 4;&#13;
+	req.update();&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>740df8332f732010cada54492799b678</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f40df8332f732010cada54492799b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <value>var req = new GlideRecord('sc_request');&#13;
+req.addQuery('sys_id', current.request);&#13;
+req.query();&#13;
+while (req.next()) {&#13;
+	req.stage = 'closed_incomplete';&#13;
+	req.state = 4;&#13;
+	req.update();&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Script to close the request">740df8332f732010cada54492799b678</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>f80df8332f732010cada54492799b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Script to close the request</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Request Completed - Successful">780df8332f732010cada54492799b671</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>bc0df8332f732010cada54492799b672</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+        <x>770</x>
+        <y>419</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=bc0df8332f732010cada54492799b672"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>bc0df8332f732010cada54492799b672</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>f40df8332f732010cada54492799b673</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>var req = new GlideRecord('sc_request');&#13;
+req.addQuery('sys_id', current.request);&#13;
+req.query();&#13;
+while (req.next()) {&#13;
+	req.stage = 'closed_complete';&#13;
+	req.state = 3;&#13;
+	req.update();&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>bc0df8332f732010cada54492799b672</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>f40df8332f732010cada54492799b673</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <value>var req = new GlideRecord('sc_request');&#13;
+req.addQuery('sys_id', current.request);&#13;
+req.query();&#13;
+while (req.next()) {&#13;
+	req.stage = 'closed_complete';&#13;
+	req.state = 3;&#13;
+	req.update();&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Script to close the request">bc0df8332f732010cada54492799b672</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>340df8332f732010cada54492799b674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">340df8332f732010cada54492799b674</condition>
+        <from display_value="Script to close the request">bc0df8332f732010cada54492799b672</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>090df8332f732010cada54492799b684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="End">700df8332f732010cada54492799b679</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Yes">340df8332f732010cada54492799b67d</condition>
+        <from display_value="Check to see the status of the job">380df8332f732010cada54492799b67c</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>0d0df8332f732010cada54492799b684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Request Complete">b00df8332f732010cada54492799b677</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">c50df8332f732010cada54492799b682</condition>
+        <from display_value="Default timer - 30 sec">700df8332f732010cada54492799b67f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>0d0df8332f732010cada54492799b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Launch the Ansible script - Run Job">8d0df8332f732010cada54492799b682</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="No">740df8332f732010cada54492799b676</condition>
+        <from display_value="Check to see the status of the job">f00df8332f732010cada54492799b675</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>410df8332f732010cada54492799b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Check to see the status of the job">380df8332f732010cada54492799b67c</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">700df8332f732010cada54492799b67c</condition>
+        <from display_value="Request Incomplete">f80df8332f732010cada54492799b67b</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>450df8332f732010cada54492799b686</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Script to close the request">740df8332f732010cada54492799b678</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">f80df8332f732010cada54492799b678</condition>
+        <from display_value="Script to close the request">740df8332f732010cada54492799b678</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>490df8332f732010cada54492799b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="End">700df8332f732010cada54492799b679</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">f40df8332f732010cada54492799b67a</condition>
+        <from display_value="Begin">bc0df8332f732010cada54492799b679</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>490df8332f732010cada54492799b686</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Lanch the Ansible Script - Create share">bc0df8332f732010cada54492799b67a</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">340df8332f732010cada54492799b67b</condition>
+        <from display_value="Lanch the Ansible Script - Create share">bc0df8332f732010cada54492799b67a</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>810df8332f732010cada54492799b686</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Launch the Ansible script - Run Job">8d0df8332f732010cada54492799b682</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">bc0df8332f732010cada54492799b677</condition>
+        <from display_value="Request Complete">b00df8332f732010cada54492799b677</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>850df8332f732010cada54492799b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Script to close the request">bc0df8332f732010cada54492799b672</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="No">b40df8332f732010cada54492799b67d</condition>
+        <from display_value="Check to see the status of the job">380df8332f732010cada54492799b67c</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>8d0df8332f732010cada54492799b684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Request Incomplete">f80df8332f732010cada54492799b67b</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Yes">f40df8332f732010cada54492799b676</condition>
+        <from display_value="Check to see the status of the job">f00df8332f732010cada54492799b675</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>c10df8332f732010cada54492799b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Default timer - 30 sec">700df8332f732010cada54492799b67f</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">050df8332f732010cada54492799b683</condition>
+        <from display_value="Launch the Ansible script - Run Job">8d0df8332f732010cada54492799b682</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:00</sys_created_on>
+        <sys_id>cd0df8332f732010cada54492799b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:00</sys_updated_on>
+        <to display_value="Check to see the status of the job">f00df8332f732010cada54492799b675</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="DELETE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:19:59</sys_created_on>
+        <sys_id>740df8332f732010cada54492799b66e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:19:59</sys_updated_on>
+        <workflow_version display_value="Storage Installation">b00df8332f732010cada54492799b66e</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="DELETE" query="workflow=e00dfcff2f332010cada54492799b6c3^sys_id!=b00df8332f732010cada54492799b66e">
+        <published>false</published>
+    </wf_workflow_version>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</application>
+        <file_path/>
+        <instance_id>c5403ebcdb81574c4c1ff70fbf961905</instance_id>
+        <instance_name>dev53603</instance_name>
+        <name>wf_workflow_e00dfcff2f332010cada54492799b6c3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_workflow_version"&gt;&lt;wf_workflow_version action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;activity_stages&gt;{"activities":{"b00df8332f732010cada54492799b677":"b40df8332f732010cada54492799b671","f80df8332f732010cada54492799b67b":"7c0df8332f732010cada54492799b671","740df8332f732010cada54492799b678":"f80df8332f732010cada54492799b671","700df8332f732010cada54492799b67f":"f00df8332f732010cada54492799b672","bc0df8332f732010cada54492799b672":"780df8332f732010cada54492799b671","bc0df8332f732010cada54492799b67a":"700df8332f732010cada54492799b672"},"ends":["700df8332f732010cada54492799b679"],"subflows":[],"stages":{"700df8332f732010cada54492799b672":{"duration":"","order":200,"stageId":"700df8332f732010cada54492799b672","name":"Call from Snow to AWX","value":"200"},"780df8332f732010cada54492799b671":{"duration":"","order":500,"stageId":"780df8332f732010cada54492799b671","name":"Request Completed - Successful","value":"600"},"f80df8332f732010cada54492799b671":{"duration":"","order":500,"stageId":"f80df8332f732010cada54492799b671","name":"Request failed - Incomplete ","value":"700"},"f00df8332f732010cada54492799b672":{"duration":"","order":300,"stageId":"f00df8332f732010cada54492799b672","name":"Waiting for the execution","value":"300"},"b40df8332f732010cada54492799b671":{"duration":"","order":400,"stageId":"b40df8332f732010cada54492799b671","name":"Call to AWX - Completed Successful","value":"400"},"7c0df8332f732010cada54492799b671":{"duration":"","order":400,"stageId":"7c0df8332f732010cada54492799b671","name":"Call to AWX - Incomplete","value":"500"}}}&lt;/activity_stages&gt;&lt;after_business_rules&gt;false&lt;/after_business_rules&gt;&lt;checked_out/&gt;&lt;checked_out_by/&gt;&lt;column_renderer display_value="Workflow-driven"&gt;a56213111b030100adca1e094f0713ac&lt;/column_renderer&gt;&lt;condition/&gt;&lt;condition_type/&gt;&lt;description/&gt;&lt;expected_sequences&gt;bc0df8332f732010cada54492799b679,bc0df8332f732010cada54492799b67a,8d0df8332f732010cada54492799b682,f00df8332f732010cada54492799b675,700df8332f732010cada54492799b67f&lt;/expected_sequences&gt;&lt;expected_time&gt;1970-01-01 14:00:00&lt;/expected_time&gt;&lt;expected_time_type/&gt;&lt;full_sequences&gt;bc0df8332f732010cada54492799b679,bc0df8332f732010cada54492799b67a,8d0df8332f732010cada54492799b682,f00df8332f732010cada54492799b675,700df8332f732010cada54492799b67f,380df8332f732010cada54492799b67c,b00df8332f732010cada54492799b677,f80df8332f732010cada54492799b67b,bc0df8332f732010cada54492799b672,740df8332f732010cada54492799b678,700df8332f732010cada54492799b679&lt;/full_sequences&gt;&lt;journal/&gt;&lt;max_activity_count&gt;100&lt;/max_activity_count&gt;&lt;name&gt;Storage Installation&lt;/name&gt;&lt;not_cacheable&gt;false&lt;/not_cacheable&gt;&lt;on_cancel&gt;&lt;![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]&gt;&lt;/on_cancel&gt;&lt;order&gt;100&lt;/order&gt;&lt;pin_type&gt;set_by_activity&lt;/pin_type&gt;&lt;published&gt;true&lt;/published&gt;&lt;relative_duration display_value="2 business days by 4pm"&gt;3bf802c20a0a0b52008e2859cd8abcf2&lt;/relative_duration&gt;&lt;requires_ert&gt;true&lt;/requires_ert&gt;&lt;run_multiple&gt;false&lt;/run_multiple&gt;&lt;schedule/&gt;&lt;stage_field&gt;stage&lt;/stage_field&gt;&lt;stage_order&gt;computed&lt;/stage_order&gt;&lt;start display_value="Begin"&gt;bc0df8332f732010cada54492799b679&lt;/start&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;b00df8332f732010cada54492799b66e&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:08&lt;/sys_updated_on&gt;&lt;table&gt;sc_req_item&lt;/table&gt;&lt;timezone/&gt;&lt;validated&gt;false&lt;/validated&gt;&lt;workflow display_value="Storage Installation"&gt;e00dfcff2f332010cada54492799b6c3&lt;/workflow&gt;&lt;/wf_workflow_version&gt;&lt;wf_workflow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;description/&gt;&lt;name&gt;Storage Installation&lt;/name&gt;&lt;preview/&gt;&lt;sys_class_name&gt;wf_workflow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:58&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e00dfcff2f332010cada54492799b6c3&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Storage Installation&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se"&gt;b8a4878507ced410f4e6ff4c7c1ed0f3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Isilon-Service-Center"&gt;b8a4878507ced410f4e6ff4c7c1ed0f3&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_workflow_e00dfcff2f332010cada54492799b6c3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;table&gt;sc_req_item&lt;/table&gt;&lt;template&gt;false&lt;/template&gt;&lt;vars/&gt;&lt;/wf_workflow&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Request Approved&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;fc0df8332f732010cada54492799b671&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;100&lt;/value&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Call from Snow to AWX&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;700df8332f732010cada54492799b672&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;200&lt;/value&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Waiting for the execution&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;f00df8332f732010cada54492799b672&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;300&lt;/value&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Call to AWX - Completed Successful&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;b40df8332f732010cada54492799b671&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;400&lt;/value&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Call to AWX - Incomplete&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;7c0df8332f732010cada54492799b671&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;500&lt;/value&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Request Completed - Successful&lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;500&lt;/order&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;780df8332f732010cada54492799b671&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;600&lt;/value&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_stage action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Request failed - Incomplete &lt;/name&gt;&lt;ola&gt;1970-01-01 00:00:00&lt;/ola&gt;&lt;order&gt;500&lt;/order&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;f80df8332f732010cada54492799b671&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;700&lt;/value&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;/wf_stage&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Begin"&gt;c7a5e32c0a0a0b3a002377c24ed8ea76&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;1&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input/&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Begin&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;bc0df8332f732010cada54492799b679&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width&gt;80&lt;/width&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;20&lt;/x&gt;&lt;y&gt;20&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=bc0df8332f732010cada54492799b679"/&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Begin"&gt;bc0df8332f732010cada54492799b679&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f40df8332f732010cada54492799b67a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="If"&gt;98f621ca0a0a0b5900f7c291f5e45a0e&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;8&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Check to see the status of the job&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;380df8332f732010cada54492799b67c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;476&lt;/x&gt;&lt;y&gt;279&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=380df8332f732010cada54492799b67c"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;380df8332f732010cada54492799b67c&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;300df8332f732010cada54492799b67d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&amp;#13;
+//&amp;#13;
+// For example,&amp;#13;
+//&amp;#13;
+   answer = ifScript();&amp;#13;
+&amp;#13;
+  function ifScript() {&amp;#13;
+	var statusVal = workflow.scratchpad.endResVal;&amp;#13;
+     if (statusVal === 'successful') {&amp;#13;
+        return 'yes';&amp;#13;
+     }&amp;#13;
+     return 'no';&amp;#13;
+  }&amp;#13;
+&lt;/value&gt;&lt;variable display_value=""&gt;c35e50810a0a0ba96248a709b450fc32&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;380df8332f732010cada54492799b67c&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;7c0df8332f732010cada54492799b67c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value=""&gt;493d2c1d0a6a803f3217a75738ea3289&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;380df8332f732010cada54492799b67c&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b80df8332f732010cada54492799b67c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;493cba6a0a6a803f07df24b118473551&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;380df8332f732010cada54492799b67c&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b80df8332f732010cada54492799b67c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;493cba6a0a6a803f07df24b118473551&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;380df8332f732010cada54492799b67c&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;7c0df8332f732010cada54492799b67c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value=""&gt;493d2c1d0a6a803f3217a75738ea3289&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;380df8332f732010cada54492799b67c&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;300df8332f732010cada54492799b67d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&amp;#13;
+//&amp;#13;
+// For example,&amp;#13;
+//&amp;#13;
+   answer = ifScript();&amp;#13;
+&amp;#13;
+  function ifScript() {&amp;#13;
+	var statusVal = workflow.scratchpad.endResVal;&amp;#13;
+     if (statusVal === 'successful') {&amp;#13;
+        return 'yes';&amp;#13;
+     }&amp;#13;
+     return 'no';&amp;#13;
+  }&amp;#13;
+&lt;/value&gt;&lt;variable display_value=""&gt;c35e50810a0a0ba96248a709b450fc32&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Check to see the status of the job"&gt;380df8332f732010cada54492799b67c&lt;/activity&gt;&lt;condition&gt;activity.result == 'no'&lt;/condition&gt;&lt;condition_default display_value="No"&gt;c1eff6430a0a0b59000f955abe842c94&lt;/condition_default&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;false&lt;/is_positive&gt;&lt;name&gt;No&lt;/name&gt;&lt;order&gt;200&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;true&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b40df8332f732010cada54492799b67d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Check to see the status of the job"&gt;380df8332f732010cada54492799b67c&lt;/activity&gt;&lt;condition&gt;activity.result == 'yes'&lt;/condition&gt;&lt;condition_default display_value="Yes"&gt;c1ef63200a0a0b59005ef89bae78feb7&lt;/condition_default&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Yes&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;340df8332f732010cada54492799b67d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="If"&gt;98f621ca0a0a0b5900f7c291f5e45a0e&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;11&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Check to see the status of the job&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f00df8332f732010cada54492799b675&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;492&lt;/x&gt;&lt;y&gt;10&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f00df8332f732010cada54492799b675"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f00df8332f732010cada54492799b675&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;3c0df8332f732010cada54492799b675&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value=""&gt;493d2c1d0a6a803f3217a75738ea3289&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f00df8332f732010cada54492799b675&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;780df8332f732010cada54492799b675&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;493cba6a0a6a803f07df24b118473551&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f00df8332f732010cada54492799b675&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;fc0df8332f732010cada54492799b675&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&amp;#13;
+//&amp;#13;
+// For example,&amp;#13;
+//&amp;#13;
+   answer = ifScript();&amp;#13;
+&amp;#13;
+  function ifScript() {&amp;#13;
+	var statusVal = workflow.scratchpad.endResVal;&amp;#13;
+     if (statusVal === 'running') {&amp;#13;
+        return 'yes';&amp;#13;
+     }&amp;#13;
+     return 'no';&amp;#13;
+  }&amp;#13;
+&lt;/value&gt;&lt;variable display_value=""&gt;c35e50810a0a0ba96248a709b450fc32&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f00df8332f732010cada54492799b675&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;780df8332f732010cada54492799b675&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;493cba6a0a6a803f07df24b118473551&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f00df8332f732010cada54492799b675&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;3c0df8332f732010cada54492799b675&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value=""&gt;493d2c1d0a6a803f3217a75738ea3289&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f00df8332f732010cada54492799b675&lt;/document_key&gt;&lt;order&gt;300&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;fc0df8332f732010cada54492799b675&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&amp;#13;
+//&amp;#13;
+// For example,&amp;#13;
+//&amp;#13;
+   answer = ifScript();&amp;#13;
+&amp;#13;
+  function ifScript() {&amp;#13;
+	var statusVal = workflow.scratchpad.endResVal;&amp;#13;
+     if (statusVal === 'running') {&amp;#13;
+        return 'yes';&amp;#13;
+     }&amp;#13;
+     return 'no';&amp;#13;
+  }&amp;#13;
+&lt;/value&gt;&lt;variable display_value=""&gt;c35e50810a0a0ba96248a709b450fc32&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Check to see the status of the job"&gt;f00df8332f732010cada54492799b675&lt;/activity&gt;&lt;condition&gt;activity.result == 'no'&lt;/condition&gt;&lt;condition_default display_value="No"&gt;c1eff6430a0a0b59000f955abe842c94&lt;/condition_default&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;false&lt;/is_positive&gt;&lt;name&gt;No&lt;/name&gt;&lt;order&gt;200&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;true&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;740df8332f732010cada54492799b676&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Check to see the status of the job"&gt;f00df8332f732010cada54492799b675&lt;/activity&gt;&lt;condition&gt;activity.result == 'yes'&lt;/condition&gt;&lt;condition_default display_value="Yes"&gt;c1ef63200a0a0b59005ef89bae78feb7&lt;/condition_default&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Yes&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f40df8332f732010cada54492799b676&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Timer"&gt;3961a1da0a0a0b5c00ecd84822f70d85&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;12&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Default timer - 30 sec&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage display_value="Waiting for the execution"&gt;f00df8332f732010cada54492799b672&lt;/stage&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;700df8332f732010cada54492799b67f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;754&lt;/x&gt;&lt;y&gt;37&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=700df8332f732010cada54492799b67f"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;350&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;300df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cbfe48a0a0a0b5200cf8b82cc6685f1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1320&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;380df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cc6788c0a0a0b5200e6743c94001b16&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1310&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;3c0df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;21fd462c0a0a0b211c997276d7806c03&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1350&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;410df8332f732010cada54492799b682&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cc740fe0a0a0b520025dcf8e2ff78e7&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1320&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;740df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cc4a4030a0a0b52007334f001376dc5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1310&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;780df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;3bf802c20a0a0b52008e2859cd8abcf2&lt;/value&gt;&lt;variable display_value=""&gt;220cd53d0a0a0b214103bdc2ec5c7ab4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1350&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;7c0df8332f732010cada54492799b67f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cc836da0a0a0b520083ebc07da2f47c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;310&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;8d0df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;script&lt;/value&gt;&lt;variable display_value=""&gt;21f80cd00a0a0b2101fcd5b5defc0810&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1360&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b00df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;292b2f0e0a0a0b215aa2dd2cbc578dc5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1310&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b40df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;c35dc0df0a0a0ba96248a7098d737925&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;500&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b80df8332f732010cada54492799b67f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;220dc5a40a0a0b2109fbd28b8c4b6213&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1360&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;c90df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;292c91070a0a0b212543d91ffde5014c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;3000&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f00df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;// Set 'answer' to the number of seconds this timer should wait&amp;#13;
+var jobIdVal = workflow.scratchpad.jobId;&amp;#13;
+workflow.scratchpad.jobId = jobIdVal;&amp;#13;
+answer = 30;&lt;/value&gt;&lt;variable display_value=""&gt;293493710a0a0b2115e3e5b4fce1d12a&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;320&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f40df8332f732010cada54492799b67f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cba34da0a0a0b5200798c86eafe1203&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1360&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;fc0df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;292bd15e0a0a0b215a040c701033e3c5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;310&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;8d0df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;script&lt;/value&gt;&lt;variable display_value=""&gt;21f80cd00a0a0b2101fcd5b5defc0810&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;320&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f40df8332f732010cada54492799b67f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cba34da0a0a0b5200798c86eafe1203&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;350&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;300df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cbfe48a0a0a0b5200cf8b82cc6685f1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;500&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b80df8332f732010cada54492799b67f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;220dc5a40a0a0b2109fbd28b8c4b6213&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1310&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b40df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;c35dc0df0a0a0ba96248a7098d737925&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1310&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;780df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;3bf802c20a0a0b52008e2859cd8abcf2&lt;/value&gt;&lt;variable display_value=""&gt;220cd53d0a0a0b214103bdc2ec5c7ab4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1310&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;3c0df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;21fd462c0a0a0b211c997276d7806c03&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1320&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;740df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cc4a4030a0a0b52007334f001376dc5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1320&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;380df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cc6788c0a0a0b5200e6743c94001b16&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1350&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;410df8332f732010cada54492799b682&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cc740fe0a0a0b520025dcf8e2ff78e7&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1350&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;7c0df8332f732010cada54492799b67f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;4cc836da0a0a0b520083ebc07da2f47c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1360&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b00df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;292b2f0e0a0a0b215aa2dd2cbc578dc5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1360&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;c90df8332f732010cada54492799b681&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;292c91070a0a0b212543d91ffde5014c&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;1360&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;fc0df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value=""&gt;292bd15e0a0a0b215a040c701033e3c5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;700df8332f732010cada54492799b67f&lt;/document_key&gt;&lt;order&gt;3000&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f00df8332f732010cada54492799b680&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;// Set 'answer' to the number of seconds this timer should wait&amp;#13;
+var jobIdVal = workflow.scratchpad.jobId;&amp;#13;
+workflow.scratchpad.jobId = jobIdVal;&amp;#13;
+answer = 30;&lt;/value&gt;&lt;variable display_value=""&gt;293493710a0a0b2115e3e5b4fce1d12a&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Default timer - 30 sec"&gt;700df8332f732010cada54492799b67f&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;c50df8332f732010cada54492799b682&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="End"&gt;c7a66f7d0a0a0b3a004544a6d2f14076&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;2&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input/&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;End&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;700df8332f732010cada54492799b679&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width&gt;80&lt;/width&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;814&lt;/x&gt;&lt;y&gt;213&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=700df8332f732010cada54492799b679"/&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Run Script"&gt;db8c65aec0a8016501d00259bc7203a4&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;3&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Lanch the Ansible Script - Create share&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage display_value="Call from Snow to AWX"&gt;700df8332f732010cada54492799b672&lt;/stage&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;bc0df8332f732010cada54492799b67a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;36&lt;/x&gt;&lt;y&gt;207&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=bc0df8332f732010cada54492799b67a"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;bc0df8332f732010cada54492799b67a&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;300df8332f732010cada54492799b67b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;var id = "e2546fe207ba5010f4e6ff4c7c1ed093";&amp;#13;
+var restApi = new Isilon_AWX_RestApi(id);&amp;#13;
+var url = 'api/v2/job_templates/19/launch/';&amp;#13;
+var jsonTry =  new global.JSON();&amp;#13;
+&amp;#13;
+var Protocol = current.variables.protocol;&amp;#13;
+var ShareName = current.variables.share_name;&amp;#13;
+var TopLevelDir = current.variables.top_level_mount_folder;&amp;#13;
+var CapacityinGB = current.variables.size_required_in_mb;&amp;#13;
+var AccessLevelOwner = current.variables.owner_access_level;&amp;#13;
+//var AccessLevelGroup = current.variables.group_access_level;&amp;#13;
+//var AccessLevelOthers = current.variables.everyone_access_level;&amp;#13;
+var StorageTier = current.variables.storage_class;&amp;#13;
+var RepliationRequired = current.variables.replication_required;&amp;#13;
+var LocalSnapshotRequired = current.variables.local_snaphshot_required;&amp;#13;
+gs.info("Checking...");&amp;#13;
+var payLo = '{"extra_vars": { "Protocol":"' + Protocol + '","ShareName":"' + ShareName + '","TopLevelDir":"' + TopLevelDir + '","CapacityinGB":"' + CapacityinGB + '","AccessLevelOwner":"' + AccessLevelOwner +'","StorageTier":"' + StorageTier +'","LocalSnapshotRequired":"' + LocalSnapshotRequired + '","RepliationRequired":"' + RepliationRequired + '" } }';&amp;#13;
+ var payload = jsonTry.decode(payLo);&amp;#13;
+ var rest = restApi.RESTCall(url, "post", payload);&amp;#13;
+ var res = JSON.parse(rest.responseBody);&amp;#13;
+ var jobId = res['job'];&amp;#13;
+ workflow.scratchpad.jobId = jobId;&lt;/value&gt;&lt;variable display_value=""&gt;c35ddef20a0a0ba96248a7090eccd518&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;bc0df8332f732010cada54492799b67a&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;300df8332f732010cada54492799b67b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;var id = "e2546fe207ba5010f4e6ff4c7c1ed093";&amp;#13;
+var restApi = new Isilon_AWX_RestApi(id);&amp;#13;
+var url = 'api/v2/job_templates/19/launch/';&amp;#13;
+var jsonTry =  new global.JSON();&amp;#13;
+&amp;#13;
+var Protocol = current.variables.protocol;&amp;#13;
+var ShareName = current.variables.share_name;&amp;#13;
+var TopLevelDir = current.variables.top_level_mount_folder;&amp;#13;
+var CapacityinGB = current.variables.size_required_in_mb;&amp;#13;
+var AccessLevelOwner = current.variables.owner_access_level;&amp;#13;
+//var AccessLevelGroup = current.variables.group_access_level;&amp;#13;
+//var AccessLevelOthers = current.variables.everyone_access_level;&amp;#13;
+var StorageTier = current.variables.storage_class;&amp;#13;
+var RepliationRequired = current.variables.replication_required;&amp;#13;
+var LocalSnapshotRequired = current.variables.local_snaphshot_required;&amp;#13;
+gs.info("Checking...");&amp;#13;
+var payLo = '{"extra_vars": { "Protocol":"' + Protocol + '","ShareName":"' + ShareName + '","TopLevelDir":"' + TopLevelDir + '","CapacityinGB":"' + CapacityinGB + '","AccessLevelOwner":"' + AccessLevelOwner +'","StorageTier":"' + StorageTier +'","LocalSnapshotRequired":"' + LocalSnapshotRequired + '","RepliationRequired":"' + RepliationRequired + '" } }';&amp;#13;
+ var payload = jsonTry.decode(payLo);&amp;#13;
+ var rest = restApi.RESTCall(url, "post", payload);&amp;#13;
+ var res = JSON.parse(rest.responseBody);&amp;#13;
+ var jobId = res['job'];&amp;#13;
+ workflow.scratchpad.jobId = jobId;&lt;/value&gt;&lt;variable display_value=""&gt;c35ddef20a0a0ba96248a7090eccd518&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Lanch the Ansible Script - Create share"&gt;bc0df8332f732010cada54492799b67a&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;340df8332f732010cada54492799b67b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Run Script"&gt;db8c65aec0a8016501d00259bc7203a4&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;5&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Launch the Ansible script - Run Job&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;8d0df8332f732010cada54492799b682&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;182&lt;/x&gt;&lt;y&gt;21&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=8d0df8332f732010cada54492799b682"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;8d0df8332f732010cada54492799b682&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;010df8332f732010cada54492799b683&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;var id = "e2546fe207ba5010f4e6ff4c7c1ed093";&amp;#13;
+var restApi = new Isilon_AWX_RestApi(id);&amp;#13;
+var jobId = workflow.scratchpad.jobId;&amp;#13;
+var jobUrl = "api/v2/jobs/" + jobId + "/";&amp;#13;
+var result = restApi.RESTCall(jobUrl, "get", "");&amp;#13;
+var endValue = JSON.parse(result.responseBody);&amp;#13;
+var endRes = endValue['status'];&amp;#13;
+workflow.scratchpad.endResVal = endRes;&amp;#13;
+gs.info("Status of the request:" + endRes);&lt;/value&gt;&lt;variable display_value=""&gt;c35ddef20a0a0ba96248a7090eccd518&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;8d0df8332f732010cada54492799b682&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;010df8332f732010cada54492799b683&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;var id = "e2546fe207ba5010f4e6ff4c7c1ed093";&amp;#13;
+var restApi = new Isilon_AWX_RestApi(id);&amp;#13;
+var jobId = workflow.scratchpad.jobId;&amp;#13;
+var jobUrl = "api/v2/jobs/" + jobId + "/";&amp;#13;
+var result = restApi.RESTCall(jobUrl, "get", "");&amp;#13;
+var endValue = JSON.parse(result.responseBody);&amp;#13;
+var endRes = endValue['status'];&amp;#13;
+workflow.scratchpad.endResVal = endRes;&amp;#13;
+gs.info("Status of the request:" + endRes);&lt;/value&gt;&lt;variable display_value=""&gt;c35ddef20a0a0ba96248a7090eccd518&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Launch the Ansible script - Run Job"&gt;8d0df8332f732010cada54492799b682&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;050df8332f732010cada54492799b683&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Set Values"&gt;1ca8d7cf0a0a0b265e9a000c2c08248c&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;6&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Request Complete&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage display_value="Call to AWX - Completed Successful"&gt;b40df8332f732010cada54492799b671&lt;/stage&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;b00df8332f732010cada54492799b677&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;526&lt;/x&gt;&lt;y&gt;429&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b00df8332f732010cada54492799b677"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;b00df8332f732010cada54492799b677&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;380df8332f732010cada54492799b677&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;state=3^work_notes=The request completed successfully through Automation^EQ&lt;/value&gt;&lt;variable display_value=""&gt;1cb38c8f0a0a0b266fb48e08de35f507&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;b00df8332f732010cada54492799b677&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;380df8332f732010cada54492799b677&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;state=3^work_notes=The request completed successfully through Automation^EQ&lt;/value&gt;&lt;variable display_value=""&gt;1cb38c8f0a0a0b266fb48e08de35f507&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Request Complete"&gt;b00df8332f732010cada54492799b677&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;bc0df8332f732010cada54492799b677&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Set Values"&gt;1ca8d7cf0a0a0b265e9a000c2c08248c&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;9&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Request Incomplete&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage display_value="Call to AWX - Incomplete"&gt;7c0df8332f732010cada54492799b671&lt;/stage&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f80df8332f732010cada54492799b67b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;18&lt;/x&gt;&lt;y&gt;431&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f80df8332f732010cada54492799b67b"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f80df8332f732010cada54492799b67b&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;7c0df8332f732010cada54492799b67b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;state=4^work_notes=The request completed with the error through Automation^EQ&lt;/value&gt;&lt;variable display_value=""&gt;1cb38c8f0a0a0b266fb48e08de35f507&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;f80df8332f732010cada54492799b67b&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;7c0df8332f732010cada54492799b67b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;state=4^work_notes=The request completed with the error through Automation^EQ&lt;/value&gt;&lt;variable display_value=""&gt;1cb38c8f0a0a0b266fb48e08de35f507&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Request Incomplete"&gt;f80df8332f732010cada54492799b67b&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;700df8332f732010cada54492799b67c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Run Script"&gt;db8c65aec0a8016501d00259bc7203a4&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;10&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Script to close the request&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage display_value="Request failed - Incomplete "&gt;f80df8332f732010cada54492799b671&lt;/stage&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;740df8332f732010cada54492799b678&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;292&lt;/x&gt;&lt;y&gt;458&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=740df8332f732010cada54492799b678"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;740df8332f732010cada54492799b678&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f40df8332f732010cada54492799b678&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;var req = new GlideRecord('sc_request');&amp;#13;
+req.addQuery('sys_id', current.request);&amp;#13;
+req.query();&amp;#13;
+while (req.next()) {&amp;#13;
+	req.stage = 'closed_incomplete';&amp;#13;
+	req.state = 4;&amp;#13;
+	req.update();&amp;#13;
+}&lt;/value&gt;&lt;variable display_value=""&gt;c35ddef20a0a0ba96248a7090eccd518&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;740df8332f732010cada54492799b678&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f40df8332f732010cada54492799b678&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;value&gt;var req = new GlideRecord('sc_request');&amp;#13;
+req.addQuery('sys_id', current.request);&amp;#13;
+req.query();&amp;#13;
+while (req.next()) {&amp;#13;
+	req.stage = 'closed_incomplete';&amp;#13;
+	req.state = 4;&amp;#13;
+	req.update();&amp;#13;
+}&lt;/value&gt;&lt;variable display_value=""&gt;c35ddef20a0a0ba96248a7090eccd518&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Script to close the request"&gt;740df8332f732010cada54492799b678&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;f80df8332f732010cada54492799b678&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Run Script"&gt;db8c65aec0a8016501d00259bc7203a4&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;7&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Script to close the request&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage display_value="Request Completed - Successful"&gt;780df8332f732010cada54492799b671&lt;/stage&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;bc0df8332f732010cada54492799b672&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;x&gt;770&lt;/x&gt;&lt;y&gt;419&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=bc0df8332f732010cada54492799b672"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;bc0df8332f732010cada54492799b672&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;f40df8332f732010cada54492799b673&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;var req = new GlideRecord('sc_request');&amp;#13;
+req.addQuery('sys_id', current.request);&amp;#13;
+req.query();&amp;#13;
+while (req.next()) {&amp;#13;
+	req.stage = 'closed_complete';&amp;#13;
+	req.state = 3;&amp;#13;
+	req.update();&amp;#13;
+}&lt;/value&gt;&lt;variable display_value=""&gt;c35ddef20a0a0ba96248a7090eccd518&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;bc0df8332f732010cada54492799b672&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;f40df8332f732010cada54492799b673&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;value&gt;var req = new GlideRecord('sc_request');&amp;#13;
+req.addQuery('sys_id', current.request);&amp;#13;
+req.query();&amp;#13;
+while (req.next()) {&amp;#13;
+	req.stage = 'closed_complete';&amp;#13;
+	req.state = 3;&amp;#13;
+	req.update();&amp;#13;
+}&lt;/value&gt;&lt;variable display_value=""&gt;c35ddef20a0a0ba96248a7090eccd518&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Script to close the request"&gt;bc0df8332f732010cada54492799b672&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;340df8332f732010cada54492799b674&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;340df8332f732010cada54492799b674&lt;/condition&gt;&lt;from display_value="Script to close the request"&gt;bc0df8332f732010cada54492799b672&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;090df8332f732010cada54492799b684&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;700df8332f732010cada54492799b679&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Yes"&gt;340df8332f732010cada54492799b67d&lt;/condition&gt;&lt;from display_value="Check to see the status of the job"&gt;380df8332f732010cada54492799b67c&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;0d0df8332f732010cada54492799b684&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Request Complete"&gt;b00df8332f732010cada54492799b677&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;c50df8332f732010cada54492799b682&lt;/condition&gt;&lt;from display_value="Default timer - 30 sec"&gt;700df8332f732010cada54492799b67f&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;0d0df8332f732010cada54492799b685&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Launch the Ansible script - Run Job"&gt;8d0df8332f732010cada54492799b682&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="No"&gt;740df8332f732010cada54492799b676&lt;/condition&gt;&lt;from display_value="Check to see the status of the job"&gt;f00df8332f732010cada54492799b675&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;410df8332f732010cada54492799b685&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Check to see the status of the job"&gt;380df8332f732010cada54492799b67c&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;700df8332f732010cada54492799b67c&lt;/condition&gt;&lt;from display_value="Request Incomplete"&gt;f80df8332f732010cada54492799b67b&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;450df8332f732010cada54492799b686&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Script to close the request"&gt;740df8332f732010cada54492799b678&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;f80df8332f732010cada54492799b678&lt;/condition&gt;&lt;from display_value="Script to close the request"&gt;740df8332f732010cada54492799b678&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;490df8332f732010cada54492799b685&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;700df8332f732010cada54492799b679&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;f40df8332f732010cada54492799b67a&lt;/condition&gt;&lt;from display_value="Begin"&gt;bc0df8332f732010cada54492799b679&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;490df8332f732010cada54492799b686&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Lanch the Ansible Script - Create share"&gt;bc0df8332f732010cada54492799b67a&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;340df8332f732010cada54492799b67b&lt;/condition&gt;&lt;from display_value="Lanch the Ansible Script - Create share"&gt;bc0df8332f732010cada54492799b67a&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;810df8332f732010cada54492799b686&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Launch the Ansible script - Run Job"&gt;8d0df8332f732010cada54492799b682&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;bc0df8332f732010cada54492799b677&lt;/condition&gt;&lt;from display_value="Request Complete"&gt;b00df8332f732010cada54492799b677&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;850df8332f732010cada54492799b685&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Script to close the request"&gt;bc0df8332f732010cada54492799b672&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="No"&gt;b40df8332f732010cada54492799b67d&lt;/condition&gt;&lt;from display_value="Check to see the status of the job"&gt;380df8332f732010cada54492799b67c&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;8d0df8332f732010cada54492799b684&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Request Incomplete"&gt;f80df8332f732010cada54492799b67b&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Yes"&gt;f40df8332f732010cada54492799b676&lt;/condition&gt;&lt;from display_value="Check to see the status of the job"&gt;f00df8332f732010cada54492799b675&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;c10df8332f732010cada54492799b685&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Default timer - 30 sec"&gt;700df8332f732010cada54492799b67f&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;050df8332f732010cada54492799b683&lt;/condition&gt;&lt;from display_value="Launch the Ansible script - Run Job"&gt;8d0df8332f732010cada54492799b682&lt;/from&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:20:00&lt;/sys_created_on&gt;&lt;sys_id&gt;cd0df8332f732010cada54492799b685&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:20:00&lt;/sys_updated_on&gt;&lt;to display_value="Check to see the status of the job"&gt;f00df8332f732010cada54492799b675&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_estimated_runtime_config action="INSERT_OR_UPDATE"&gt;&lt;estimated_run_time/&gt;&lt;no_of_data_points&gt;1&lt;/no_of_data_points&gt;&lt;percentage_threshold_ert&gt;20&lt;/percentage_threshold_ert&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 09:19:59&lt;/sys_created_on&gt;&lt;sys_id&gt;740df8332f732010cada54492799b66e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 09:19:59&lt;/sys_updated_on&gt;&lt;workflow_version display_value="Storage Installation"&gt;b00df8332f732010cada54492799b66e&lt;/workflow_version&gt;&lt;/wf_estimated_runtime_config&gt;&lt;wf_workflow_version action="update_multiple" query="workflow=e00dfcff2f332010cada54492799b6c3^sys_id!=b00df8332f732010cada54492799b66e"&gt;&lt;published&gt;false&lt;/published&gt;&lt;/wf_workflow_version&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>126892626</payload_hash>
+        <record_name>Storage Installation</record_name>
+        <reverted_from/>
+        <source>30a4878507ced410f4e6ff4c7c1ed0f6</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 09:20:09</sys_created_on>
+        <sys_id>c70d3c332f732010cada54492799b634</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1793bd3d6330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 09:20:09</sys_updated_on>
+        <type>Workflow</type>
+        <update_guid>430d3c33c37320108ebf563bd9dc4d34</update_guid>
+        <update_guid_history>430d3c33c37320108ebf563bd9dc4d34:126892626</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Storage Installation">02b9c0822f143010cada54492799b60e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-24 15:37:55</sys_created_on>
+        <sys_db_object display_value="" name="wf_workflow">wf_workflow</sys_db_object>
+        <sys_id>2278ecec169a490e98a9bf6a13bed121</sys_id>
+        <sys_metadata>e00dfcff2f332010cada54492799b6c3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Storage Installation</sys_name>
+        <sys_package display_value="Isilon-Service-Center" source="x_440434_isilon_se">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Isilon-Service-Center">b8a4878507ced410f4e6ff4c7c1ed0f3</sys_scope>
+        <sys_scope_delete display_value="">37456c6e5b9f4cb091a2c04f62f25081</sys_scope_delete>
+        <sys_update_name>wf_workflow_e00dfcff2f332010cada54492799b6c3</sys_update_name>
+        <sys_update_version display_value="wf_workflow_e00dfcff2f332010cada54492799b6c3">c70d3c332f732010cada54492799b634</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-24 15:37:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
